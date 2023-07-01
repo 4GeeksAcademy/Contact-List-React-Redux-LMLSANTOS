@@ -1,0 +1,28 @@
+button {
+    background-color: rgb(58, 177, 58);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px; 
+}
+
+img {
+    border-radius: 50%;
+}
+
+.iconSort {
+    color:rgb(141, 136, 136)
+}
+
+.icons {
+    color: black;
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: green;
+}
+
+.trash:hover{
+    color: red;
+}

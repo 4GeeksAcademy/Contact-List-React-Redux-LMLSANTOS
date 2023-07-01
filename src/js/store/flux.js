@@ -12,7 +12,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			// inserting the agenda
+			agenda: '4geeks_agenda',
+
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -36,8 +39,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 
 				//reset the global store
-				setStore({ demo: demo });
+				setStore({ 
+					...store,
+					demo: demo 
+				});
+			},
+			// Function newAgenda changes the items inside the store
+
+			changeAgenda: (newAgenda) => {
+				const store = getStore();
+
+				setStore({ 
+					...store,
+					demo: newAgenda 
+				});
 			}
+
 		}
 	};
 };
